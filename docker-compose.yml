@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  wallet_grpc_server:
+    hostname: wallet_grpc_server
+    image: wallet_grpc_server
+    ports:
+      - 1691:1691
+    env_file:
+      - .env
